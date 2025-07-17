@@ -27,7 +27,7 @@ export default function HomeScreen({ navigation }) {
 
   const fetchRecipes = async () => {
     try {
-      const res = await fetch('https://dummyjson.com/recipes?limit=10');
+      const res = await fetch('https://dummyjson.com/recipes?limit=20');
       const json = await res.json();
       setRecipes(json.recipes);
     } catch (e) {
